@@ -5,7 +5,7 @@ from openai import OpenAI
 st.title("💬 loplat chatbot")
 st.write(
     "신세계백화점 강남점에서 궁금한 것은 무엇이든 물어보세요."
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+    # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
