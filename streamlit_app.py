@@ -12,13 +12,11 @@ st.write(
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
 # openai_api_key = st.text_input("OpenAI API Key", type="password")
-# OPENAI_API_KEY = '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'
-# openai_api_key = OPENAI_API_KEY #st.secrets["OPENAI_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 from datetime import datetime
 import os
-OPENAI_API_KEY = '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'
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+os.environ['OPENAI_API_KEY'] = openai_api_key
 
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 embeddings = OpenAIEmbeddings()
