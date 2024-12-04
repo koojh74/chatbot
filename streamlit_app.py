@@ -102,7 +102,7 @@ if prompt := st.chat_input("What is up?"):
 
     store_text = get_data_from_vector_db(prompt)
     context = shinsegae_gangnam
-    today = datetime.now().strftime("%Y-%m-%d (%A)")
+    today = datetime.now().strftime("%Y-%m-%d %H시 (%A)")
     location = "신세계 강남점"
     enhanced_prompt = f"""
         아래 정보를 참고해서 질문에 답변을 합니다. 지금 질문하는 사람은 해당 백화점 안에 있습니다.:
