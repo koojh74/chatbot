@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 loplat chatbot")
+st.title("💬 store AI chatbot")
 st.write(
     "신세계백화점 강남점에서 궁금한 것은 무엇이든 물어보세요."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
@@ -85,7 +85,7 @@ for message in st.session_state.messages:
 
 # Create a chat input field to allow the user to enter a message. This will display
 # automatically at the bottom of the page.
-if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("무엇이든 물어보세요?"):
 
     # Store and display the current prompt.
     st.session_state.messages.append({"role": "user", "content": prompt})
