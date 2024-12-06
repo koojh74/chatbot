@@ -79,9 +79,9 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Display the existing chat messages via `st.chat_message`.
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+# for message in st.session_state.messages:
+#     with st.chat_message(message["role"]):
+#         st.markdown(message["content"])
 
 # Create a chat input field to allow the user to enter a message. This will display
 # automatically at the bottom of the page.
