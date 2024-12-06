@@ -122,6 +122,14 @@ if prompt := st.chat_input("What is up?"):
 
     # Stream the response to the chat using `st.write_stream`, then store it in 
     # session state.
-    with st.chat_message("assistant"):
-        response = st.write(stream)
-    st.session_state.messages.append({"role": "assistant", "content": response})
+    # with st.chat_message("assistant"):
+    #     response = st.write(stream)
+    # st.session_state.messages.append({"role": "assistant", "content": response})
+
+    # Add assistant's response to session state
+    st.session_state.messages.append({"role": "assistant", "content": stream})
+
+# Display chat history
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
