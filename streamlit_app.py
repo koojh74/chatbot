@@ -96,6 +96,9 @@ with col1:
         options=["신세계백화점 강남점", "현대백화점 판교점"],
         key="area_select"
     )
+st.session_state.area = area
+
+st.driver()
 
 # Display the existing chat messages via `st.chat_message`.
 for message in st.session_state.messages:
