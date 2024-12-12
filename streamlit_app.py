@@ -131,7 +131,8 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
     # today = datetime.now().strftime("%Y-%m-%d %H:%M (%A)")
     location = "신세계 강남점"
     enhanced_prompt = f"""
-        아래 정보를 참고해서 질문에 답변을 합니다. 지금 질문하는 사람은 해당 백화점 안에 있습니다.:
+        아래 정보를 참고해서 질문에 답변을 합니다. 지금 질문하는 사람은 해당 백화점 안에 있습니다.
+        매장내 판매 품목과 관련하여 과도한 추정은 하지 않습니다.:
         오늘: {today}
         위치: {location}
         백화점 정보: {context}
