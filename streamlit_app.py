@@ -86,6 +86,17 @@ def get_data_from_vector_db(query):
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+if "area" not in st.session_state:
+    st.session_state.area = None
+
+col1 = st.columns(1)
+with col1:
+    area = st.selectbox(
+        "area",
+        options=["신세계백화점 강남점", "현대백화점 판교점"],
+        key="area_select"
+    )
+
 # Display the existing chat messages via `st.chat_message`.
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
