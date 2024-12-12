@@ -89,13 +89,11 @@ if "messages" not in st.session_state:
 if "area" not in st.session_state:
     st.session_state.area = None
 
-col1 = st.columns(1)
-with col1:
-    area = st.selectbox(
-        "area",
-        options=["신세계백화점 강남점", "현대백화점 판교점"],
-        key="area_select"
-    )
+area = st.selectbox(
+    "백화점을 선택하세요",
+    options=["신세계백화점 강남점", "현대백화점 판교점"],
+    key="option_select"
+)
 st.session_state.area = area
 
 st.driver()
