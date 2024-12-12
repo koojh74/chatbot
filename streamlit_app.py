@@ -66,7 +66,7 @@ def get_data_from_vector_db(query, area):
         filter={
             # "area": "현대백화점 판교점"
             # "area": "신세계백화점 강남점"
-            area: area
+            "area": area
         }
     )
 
