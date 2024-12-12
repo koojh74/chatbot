@@ -62,7 +62,10 @@ def get_data_from_vector_db(query):
     results = pc_i.query(
         vector=query_embedding,
         top_k=20,
-        include_metadata=True
+        include_metadata=True,
+        filter={
+            "area": "현대백화점 판교점"
+        }
     )
 
     store_text = ''
