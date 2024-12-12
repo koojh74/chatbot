@@ -55,7 +55,7 @@ shinsegae_gangnam = """
         수유실(리틀라운지): 10층에 위치해 있으며, 유아휴게실로서 수유 및 기저귀 교환 등의 편의시설을 제공합니다.
 """
 
-def get_data_from_vector_db(query):
+def get_data_from_vector_db(query, area):
     query_embedding = sro_embeddings.encode(query).tolist()
 
     # Pinecone에서 유사한 항목 검색
@@ -65,7 +65,8 @@ def get_data_from_vector_db(query):
         include_metadata=True,
         filter={
             # "area": "현대백화점 판교점"
-            "area": "신세계백화점 강남점"
+            # "area": "신세계백화점 강남점"
+            area: area
         }
     )
 
@@ -96,7 +97,7 @@ area = st.selectbox(
 )
 st.session_state.area = area
 
-st.driver()
+st.divider()
 
 # Display the existing chat messages via `st.chat_message`.
 for message in st.session_state.messages:
@@ -122,7 +123,7 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
     #     stream=True,
     # )
 
-    store_text = get_data_from_vector_db(prompt)
+    store_text = get_data_from_vector_db(prompt, st.session_state.area)
     context = shinsegae_gangnam
 
     korea_timezone = pytz.timezone('Asia/Seoul')
