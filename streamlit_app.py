@@ -31,7 +31,7 @@ llm = ChatOpenAI(
 PINECONE_KEY = 'pcsk_5LSZ4P_ANxevsPE5nS6idLg9CZPjMzPVNcj1JUHX6atoMxHq4zJjHZ6nBcW4PVbkgDZfa6'
 from pinecone import Pinecone, ServerlessSpec
 pc = Pinecone(api_key=PINECONE_KEY)
-pc_i = pc.Index("department")
+pc_i = pc.Index("departments")
 
 from sentence_transformers import SentenceTransformer
 sro_embeddings = SentenceTransformer('jhgan/ko-sroberta-multitask')
@@ -63,10 +63,10 @@ def get_data_from_vector_db(query):
         vector=query_embedding,
         top_k=20,
         include_metadata=True,
-        # filter={
-        #     # "area": "현대백화점 판교점"
-        #     "area": "신세계백화점 강남점"
-        # }
+        filter={
+            # "area": "현대백화점 판교점"
+            "area": "신세계백화점 강남점"
+        }
     )
 
     store_text = ''
