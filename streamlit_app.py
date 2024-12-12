@@ -2,9 +2,9 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("💬 로플랫")
+st.title("💬 신세계 강남")
 st.write(
-    "신세계백화점 강남점에서 무엇을 알고싶나요."
+    "무엇이든 물어보는 새로운 지도."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
