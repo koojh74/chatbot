@@ -4,7 +4,7 @@ from openai import OpenAI
 # Show title and description.
 st.title("MAP Assistant")
 st.write(
-    "신세계백화점 강남점에서 궁금한건 무엇이든 물어보세요."
+    f"{st.session_state.area}에서 궁금한건 뭐든지 물어보세요."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
@@ -90,12 +90,12 @@ if "messages" not in st.session_state:
 if "area" not in st.session_state:
     st.session_state.area = "신세계백화점 강남점"
 
-# area = st.selectbox(
-#     "백화점을 선택하세요",
-#     options=["신세계백화점 강남점", "현대백화점 판교점"],
-#     key="option_select"
-# )
-# st.session_state.area = area
+area = st.selectbox(
+    "백화점을 선택하세요",
+    options=["신세계백화점 강남점", "현대백화점 판교점"],
+    key="option_select"
+)
+st.session_state.area = area
 
 # st.divider()
 
