@@ -8,14 +8,14 @@ def set_title_style():
         <style>
         .title-container {
             background-color: #E3F2FD;  /* 연한 하늘색 */
-            padding: 0.5rem;
+            padding: 0.1rem;
             border-radius: 6px;
             margin-bottom: 0.1rem;
-            text-align: left;
+            text-align: center;
         }
         .title-text {
             color: #1976D2;  /* 진한 파란색 글씨 */
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: bold;
             margin: 0.1;
         }
@@ -30,11 +30,11 @@ def custom_title(title_text):
         """, unsafe_allow_html=True)
 
 
-# set_title_style()
-# custom_title("MAP Assistant")
+set_title_style()
+custom_title("MAP Assistant")
 
 # Show title and description.
-st.title("MAP Assistant")
+# st.title("MAP Assistant")
 st.write(
     "아래 장소에서 궁금한건 뭐든지 물어보세요."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
