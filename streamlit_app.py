@@ -23,8 +23,8 @@ def set_title_style():
         .block-container {
             padding-top: 1rem !important;
             padding-bottom: 0rem !important;
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
+            padding-left: 0.1rem !important;
+            padding-right: 0.1rem !important;
         }
         
         /* 메시지 간격 조정 */
@@ -60,7 +60,7 @@ def set_title_style():
 def custom_title(title_text):
     st.markdown(f"""
         <div class="title-container">
-            <h1 class="title-text">{title_text}</h1>
+            <h2 class="title-text">{title_text}</h2>
         </div>
         """, unsafe_allow_html=True)
 
