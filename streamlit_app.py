@@ -15,7 +15,7 @@ def set_title_style():
         }
         .title-text {
             color: #1976D2;  /* 진한 파란색 글씨 */
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: bold;
             margin: 0.1;
         }
