@@ -1,8 +1,40 @@
 import streamlit as st
 from openai import OpenAI
 
+
+def set_title_style():
+    # CSS를 사용하여 타이틀 영역 스타일링
+    st.markdown("""
+        <style>
+        .title-container {
+            background-color: #E3F2FD;  /* 연한 하늘색 */
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .title-text {
+            color: #1976D2;  /* 진한 파란색 글씨 */
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
+def custom_title(title_text):
+    st.markdown(f"""
+        <div class="title-container">
+            <h2 class="title-text">{title_text}</h2>
+        </div>
+        """, unsafe_allow_html=True)
+
+
+set_title_style()
+custom_title("MAP Assistant")
+
 # Show title and description.
-st.title("MAP Assistant")
+# st.title("MAP Assistant")
 st.write(
     "아래 장소에서 궁금한건 뭐든지 물어보세요."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
