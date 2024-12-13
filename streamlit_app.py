@@ -160,6 +160,11 @@ def get_data_from_vector_db(query, area):
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+if "context" not in st.session_state:
+        st.session_state.context = {
+            "last_question": None
+        }
+
 if "area" not in st.session_state:
     st.session_state.area = "신세계백화점 강남점"
 
