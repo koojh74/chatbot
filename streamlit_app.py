@@ -204,7 +204,7 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
         context = shinsegae_gangnam
 
     if st.session_state.context["last_question"]:
-        last_context = '필요하면 다음의 이전 질문내용을 참고하세요: ' + st.session_state.context["last_question"]:
+        last_context = '필요하면 다음의 이전 질문내용을 참고하세요: ' + st.session_state.context["last_question"]
     else:
         last_context = ''
 
