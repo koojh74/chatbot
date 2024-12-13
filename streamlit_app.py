@@ -19,28 +19,6 @@ def set_title_style():
             font-weight: bold;
             margin: 0.1;
         }
-        import streamlit as st
-from typing import Literal
-
-def set_page_style():
-    # CSS를 사용하여 전체적인 여백 및 스타일 조정
-    st.markdown("""
-        <style>
-        /* 타이틀 스타일 */
-        .title-container {
-            background-color: #E3F2FD;
-            padding: 0.8rem;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .title-text {
-            color: #1976D2;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin: 0;
-        }
-        
         /* 전체 페이지 여백 조정 */
         .block-container {
             padding-top: 1rem !important;
@@ -82,7 +60,7 @@ def set_page_style():
 def custom_title(title_text):
     st.markdown(f"""
         <div class="title-container">
-            <h2 class="title-text">{title_text}</h2>
+            <h1 class="title-text">{title_text}</h1>
         </div>
         """, unsafe_allow_html=True)
 
