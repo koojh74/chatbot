@@ -202,7 +202,11 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
         context = hyundai_pangyo
     else:
         context = shinsegae_gangnam
-    
+
+    if st.session_state.context["last_question"]:
+        last_context = '필요하면 다음의 이전 질문내용을 참고하세요: ' + st.session_state.context["last_question"]:
+    else:
+        last_context = ''
 
     korea_timezone = pytz.timezone('Asia/Seoul')
     today = datetime.now(korea_timezone).strftime("%Y-%m-%d %H시 (%A)")
@@ -216,6 +220,7 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
         위치: {location}
         백화점 정보: {context}
         질문 관련 매장 정보: {store_text}
+        {last_context}
         질문: {prompt}
         답변:
     """
@@ -229,6 +234,9 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
 
     # Add assistant's response to session state
     st.session_state.messages.append({"role": "assistant", "content": stream})
+
+    if role == "user":
+        st.session_state.context["last_question"] = message
 
 # Display chat history
 # for message in st.session_state.messages:
