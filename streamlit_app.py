@@ -231,6 +231,8 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
     """
     stream = f'[{location}] ' + llm(enhanced_prompt).content
 
+    st.session_state.context["last_question"] = message
+
     # Stream the response to the chat using `st.write_stream`, then store it in 
     # session state.
     with st.chat_message("assistant"):
@@ -239,9 +241,6 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
 
     # Add assistant's response to session state
     st.session_state.messages.append({"role": "assistant", "content": stream})
-
-    if role == "user":
-        st.session_state.context["last_question"] = message
 
 # Display chat history
 # for message in st.session_state.messages:
