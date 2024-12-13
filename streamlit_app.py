@@ -26,34 +26,6 @@ def set_title_style():
             padding-left: 0.1rem !important;
             padding-right: 0.1rem !important;
         }
-        
-        /* 메시지 간격 조정 */
-        .stChatMessage {
-            padding: 0.5rem !important;
-            margin-bottom: 0.5rem !important;
-        }
-        
-        /* 메시지 내부 여백 조정 */
-        .stMarkdown {
-            padding: 0.2rem 0 !important;
-        }
-        
-        /* Select box 여백 조정 */
-        .stSelectbox {
-            margin-bottom: 0.5rem !important;
-        }
-        
-        /* Divider 여백 조정 */
-        .stDivider {
-            margin-top: 0.5rem !important;
-            margin-bottom: 0.5rem !important;
-        }
-        
-        /* 채팅 입력창 상단 여백 조정 */
-        .stChatInputContainer {
-            padding-top: 0.5rem !important;
-            padding-bottom: 0.5rem !important;
-        }
         </style>
         """, unsafe_allow_html=True)
 
