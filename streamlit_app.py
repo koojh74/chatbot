@@ -15,7 +15,7 @@ def set_title_style():
         }
         .title-text {
             color: #1976D2;  /* 진한 파란색 글씨 */
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: bold;
             margin: 0.1;
         }
@@ -38,7 +38,7 @@ def custom_title(title_text):
 
 
 set_title_style()
-custom_title("MAP Assistant")
+custom_title("MAP Assistant (로플랫)")
 
 # Show title and description.
 # st.title("MAP Assistant")
