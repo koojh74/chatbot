@@ -231,7 +231,7 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
     """
     stream = f'[{location}] ' + llm(enhanced_prompt).content
 
-    st.session_state.context["last_question"] = prompt
+    # st.session_state.context["last_question"] = prompt
 
     # Stream the response to the chat using `st.write_stream`, then store it in 
     # session state.
