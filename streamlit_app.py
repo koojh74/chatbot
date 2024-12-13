@@ -4,7 +4,7 @@ from openai import OpenAI
 # Show title and description.
 st.title("MAP Assistant")
 st.write(
-    f"{st.session_state.area}에서 궁금한건 뭐든지 물어보세요."
+    "아래 장소에서 궁금한건 뭐든지 물어보세요."
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
