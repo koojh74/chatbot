@@ -8,14 +8,14 @@ def set_title_style():
         <style>
         .title-container {
             background-color: #E3F2FD;  /* 연한 하늘색 */
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            text-align: center;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            text-align: left;
         }
         .title-text {
             color: #1976D2;  /* 진한 파란색 글씨 */
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin: 0;
         }
