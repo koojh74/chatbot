@@ -8,9 +8,9 @@ def set_title_style():
         <style>
         .title-container {
             background-color: #E3F2FD;  /* 연한 하늘색 */
-            padding: 1rem;
+            padding: 0.2rem;
             border-radius: 6px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.2rem;
             text-align: left;
         }
         .title-text {
