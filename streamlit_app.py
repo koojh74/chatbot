@@ -19,6 +19,63 @@ def set_title_style():
             font-weight: bold;
             margin: 0.1;
         }
+        import streamlit as st
+from typing import Literal
+
+def set_page_style():
+    # CSS를 사용하여 전체적인 여백 및 스타일 조정
+    st.markdown("""
+        <style>
+        /* 타이틀 스타일 */
+        .title-container {
+            background-color: #E3F2FD;
+            padding: 0.8rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .title-text {
+            color: #1976D2;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        /* 전체 페이지 여백 조정 */
+        .block-container {
+            padding-top: 1rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        /* 메시지 간격 조정 */
+        .stChatMessage {
+            padding: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        
+        /* 메시지 내부 여백 조정 */
+        .stMarkdown {
+            padding: 0.2rem 0 !important;
+        }
+        
+        /* Select box 여백 조정 */
+        .stSelectbox {
+            margin-bottom: 0.5rem !important;
+        }
+        
+        /* Divider 여백 조정 */
+        .stDivider {
+            margin-top: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        
+        /* 채팅 입력창 상단 여백 조정 */
+        .stChatInputContainer {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
         </style>
         """, unsafe_allow_html=True)
 
