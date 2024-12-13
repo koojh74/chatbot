@@ -8,7 +8,7 @@ def set_title_style():
         <style>
         .title-container {
             background-color: #E3F2FD;  /* 연한 하늘색 */
-            padding: 0.1rem;
+            padding: 0.5rem;
             border-radius: 6px;
             margin-bottom: 0.1rem;
             text-align: left;
@@ -17,7 +17,7 @@ def set_title_style():
             color: #1976D2;  /* 진한 파란색 글씨 */
             font-size: 1.6rem;
             font-weight: bold;
-            margin: 0.5;
+            margin: 0.1;
         }
         </style>
         """, unsafe_allow_html=True)
