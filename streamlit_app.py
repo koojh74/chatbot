@@ -38,7 +38,7 @@ def custom_title(title_text):
 
 
 set_title_style()
-custom_title("MAP Assistant (로플랫)")
+custom_title("MAPAgent (로플랫)")
 
 # Show title and description.
 # st.title("MAP Assistant")
