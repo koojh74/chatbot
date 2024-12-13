@@ -21,7 +21,7 @@ def set_title_style():
         }
         /* 전체 페이지 여백 조정 */
         .block-container {
-            padding-top: 2rem !important;
+            padding-top: 2.6rem !important;
             padding-bottom: 0rem !important;
             padding-left: 0.1rem !important;
             padding-right: 0.1rem !important;
