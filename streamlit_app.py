@@ -8,7 +8,7 @@ def set_title_style():
         <style>
         .title-container {
             background-color: #E3F2FD;  /* 연한 하늘색 */
-            padding: 0.1rem;
+            padding: 0.2rem;
             border-radius: 6px;
             margin-bottom: 0.1rem;
             text-align: center;
@@ -21,7 +21,7 @@ def set_title_style():
         }
         /* 전체 페이지 여백 조정 */
         .block-container {
-            padding-top: 2.6rem !important;
+            padding-top: 3rem !important;
             padding-bottom: 0rem !important;
             padding-left: 0.1rem !important;
             padding-right: 0.1rem !important;
