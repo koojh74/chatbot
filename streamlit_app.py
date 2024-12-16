@@ -32,7 +32,7 @@ def set_title_style():
 def custom_title(title_text):
     st.markdown(f"""
         <div class="title-container">
-            <h2 class="title-text">{title_text}</h2>
+            <h3 class="title-text">{title_text}</h3>
         </div>
         """, unsafe_allow_html=True)
 
