@@ -22,9 +22,9 @@ def set_title_style():
         /* 전체 페이지 여백 조정 */
         .block-container {
             padding-top: 3rem !important;
-            padding-bottom: 0rem !important;
-            padding-left: 0.1rem !important;
-            padding-right: 0.1rem !important;
+            padding-bottom: 0.4rem !important;
+            padding-left: 0.4rem !important;
+            padding-right: 0.4rem !important;
         }
         </style>
         """, unsafe_allow_html=True)
