@@ -20,12 +20,12 @@ def set_title_style():
             margin: 0.1;
         }
         /* 전체 페이지 여백 조정 */
-        .block-container {
-            padding-top: 3rem !important;
-            padding-bottom: 0.4rem !important;
-            padding-left: 0.4rem !important;
-            padding-right: 0.4rem !important;
-        }
+        # .block-container {
+        #     padding-top: 3rem !important;
+        #     padding-bottom: 1rem !important;
+        #     padding-left: 1rem !important;
+        #     padding-right: 1rem !important;
+        # }
         </style>
         """, unsafe_allow_html=True)
 
