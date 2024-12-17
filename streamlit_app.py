@@ -38,12 +38,12 @@ def custom_title(title_text):
 
 
 set_title_style()
-custom_title("MAP Agent (로플랫)")
+custom_title("새로운 지도")
 
 # Show title and description.
 # st.title("MAP Assistant")
 st.write(
-    "아래 장소에서 궁금한건 뭐든지 물어보세요. (예: 식당 영업시간, 등산화, 피자가 먹고싶어, 상품권 등)"
+    "MAP Agent by loplat. 아래 장소에서 궁금한건 뭐든지 물어보세요. (예: 식당 영업시간, 등산화, 피자가 먹고싶어, 상품권 등)"
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
