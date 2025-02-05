@@ -43,7 +43,7 @@ custom_title("새로운 지도")
 # Show title and description.
 # st.title("MAP Assistant")
 st.write(
-    "[MAP Agent by loplat.] 여기서 찾고싶은건 뭐든지 물어보세요. (예: 식당 영업시간, 등산화, 피자 먹자, 상품권 등)"
+    "[MAP Agent by loplat.] 여기서 궁금한건 뭐든지 물어보세요. (예: 식당 영업시간, 등산화, 피자 먹자, 상품권 등)"
     # "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
@@ -166,11 +166,11 @@ if "context" not in st.session_state:
         }
 
 if "area" not in st.session_state:
-    st.session_state.area = "신세계백화점 강남점"
+    st.session_state.area = "현대백화점 판교점"
 
 area = st.selectbox(
     "백화점을 선택하세요",
-    options=["신세계백화점 강남점", "현대백화점 판교점"],
+    options=["현대백화점 판교점", "신세계백화점 강남점"],
     key="option_select"
 )
 st.session_state.area = area
