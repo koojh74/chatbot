@@ -2,5 +2,5 @@ streamlit
 openai
 langchain
 langchain-openai
-pinecone-client
+pinecone
 sentence_transformers
