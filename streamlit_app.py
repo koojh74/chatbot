@@ -38,7 +38,7 @@ def custom_title(title_text):
 
 
 set_title_style()
-custom_title("새로운 지도")
+custom_title("Gotcha Search(Map)")
 
 # Show title and description.
 # st.title("MAP Assistant")
