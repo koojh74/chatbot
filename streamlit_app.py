@@ -229,7 +229,8 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
         질문: {prompt}
         답변:
     """
-    stream = f'[{location}] ' + llm(enhanced_prompt).content
+    # stream = f'[{location}] ' + llm(enhanced_prompt).content
+    stream = f'[{location}] ' + llm(enhanced_prompt)
 
     # st.session_state.context["last_question"] = prompt
 
