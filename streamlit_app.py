@@ -62,9 +62,9 @@ os.environ['OPENAI_API_KEY'] = openai_api_key
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 embeddings = OpenAIEmbeddings()
 llm = ChatOpenAI(
-    model_name='gpt-4o',
+    model_name='gpt-4o-mini',
     temperature=0,
-    max_tokens=2048
+    max_tokens=1024
 )
 
 PINECONE_KEY = 'pcsk_5LSZ4P_ANxevsPE5nS6idLg9CZPjMzPVNcj1JUHX6atoMxHq4zJjHZ6nBcW4PVbkgDZfa6'
@@ -230,7 +230,8 @@ if prompt := st.chat_input("무엇을 찾고있나요?"):
         답변:
     """
     # stream = f'[{location}] ' + llm(enhanced_prompt).content
-    stream = f'[{location}] ' + llm(enhanced_prompt)
+    response = llm.invoke(enhanced_prompt)
+    stream = f'[{location}] ' + response.content
 
     # st.session_state.context["last_question"] = prompt
 
