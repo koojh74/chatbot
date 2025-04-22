@@ -64,7 +64,7 @@ embeddings = OpenAIEmbeddings()
 llm = ChatOpenAI(
     model_name='gpt-4o',
     temperature=0,
-    max_tokens=1024
+    max_tokens=2048
 )
 
 PINECONE_KEY = 'pcsk_5LSZ4P_ANxevsPE5nS6idLg9CZPjMzPVNcj1JUHX6atoMxHq4zJjHZ6nBcW4PVbkgDZfa6'
