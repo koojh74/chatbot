@@ -62,7 +62,7 @@ os.environ['OPENAI_API_KEY'] = openai_api_key
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 embeddings = OpenAIEmbeddings()
 llm = ChatOpenAI(
-    model_name='gpt-4o-mini',
+    model_name='gpt-4o',
     temperature=0,
     max_tokens=1024
 )
